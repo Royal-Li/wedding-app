@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<!--数据库驱动 -->
+	<!-- <classPathEntry
+		location="D:\01develop\maven\apache-maven-3.5.4\repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar" /> -->
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+		<!-- s是否自动生成日期和注释 -->
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<!--s数据库链接地址账号密码 -->
+		<jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.64:3306/manager_system?serverTimezone=GMT" 
+			userId="root"
+			password="warren">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!--s生成Model类存放位置 -->
+		<javaModelGenerator
+			targetPackage="com.system.entity"
+			targetProject="System-entity/src/main/java">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!--s生成映射文件存放位置 -->
+		<sqlMapGenerator targetPackage="com.system.mapper"
+			targetProject="System-mapper/src/main/java">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		<!--s生成Dao类存放位置 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.system.mapper"
+			targetProject="System-mapper/src/main/java">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+		<!-- s生成对应表及类名 -->
+		<table tableName="sys_log"></table>
+		<!-- <table schema="" tableName="sys_user" 
+			enableSelectByExample="false"
+			enableDeleteByExample="false" 
+			enableCountByExample="false"
+			enableUpdateByExample="fasle" 
+			selectByExampleQueryId="false"></table>
+		<table schema="" tableName="sys_user_role" 
+			enableSelectByExample="false"
+			enableDeleteByExample="false" 
+			enableCountByExample="false"
+			enableUpdateByExample="fasle" 
+			selectByExampleQueryId="false"></table>
+		<table schema="" tableName="sys_role" 
+			enableSelectByExample="false"
+			enableDeleteByExample="false" 
+			enableCountByExample="false"
+			enableUpdateByExample="fasle" 
+			selectByExampleQueryId="false"></table>
+		<table schema="" tableName="sys_role_resource"
+			enableSelectByExample="false" 
+			enableDeleteByExample="false"
+			enableCountByExample="false" 
+			enableUpdateByExample="fasle"
+			selectByExampleQueryId="false"></table>
+		<table schema="" tableName="sys_resource" 
+			enableSelectByExample="false"
+			enableDeleteByExample="false" 
+			enableCountByExample="false"
+			enableUpdateByExample="fasle" 
+			selectByExampleQueryId="false"></table> -->
+	</context>
+</generatorConfiguration>
