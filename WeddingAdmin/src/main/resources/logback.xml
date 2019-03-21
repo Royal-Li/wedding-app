@@ -13,8 +13,7 @@
 	<jmxConfigurator />
 
 	<!-- s定义日志文件 输出位置  读取logging.path-->
-	<!-- <property name="log.home_dir"
-		value="${LOG_PATH}" /> -->
+	<property name="log.home_dir" value="${LOG_PATH}" />
 
 	<!--s 日志最大的历史 365天 -->
 	<property name="log.maxHistory" value="365" />
