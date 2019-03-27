@@ -11,10 +11,10 @@
 	</parent>
 	
 	<groupId>com.jason.design</groupId>
-	<artifactId>WeddingAdmin</artifactId>
+	<artifactId>wedding-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>WeddingAdmin</name>
-	<description>wedding 后台</description>
+	<name>wedding-app</name>
+	<description>wedding-app 后台</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -136,6 +136,23 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
+		<dependency> 
+			<groupId>com.paypal.sdk</groupId> 
+			<artifactId>checkout-sdk</artifactId> 
+			<version>1.0.0</version> 
+		</dependency>
+		<dependency> 
+			<groupId>org.json</groupId> 
+			<artifactId>json</artifactId> 
+			<version>20180813</version> 
+		</dependency>
+		<dependency> 
+			<groupId>org.apache.commons</groupId> 
+			<artifactId>commons-lang3</artifactId> 
+			<version>3.6</version> 
+		</dependency>
+
 	</dependencies>
 
 	<!-- s个推仓库 -->
