@@ -45,6 +45,6 @@ public class GetOrder extends PayPalClient {
    *@throws IOException
    */
   public static void main(String[] args) throws IOException {
-    new GetOrder().getOrder("7D687445BY5133132");
+    new GetOrder().getOrder("8V4804460L281480M");
   }
 }
