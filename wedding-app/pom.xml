@@ -24,9 +24,9 @@
 
 	<dependencies>
 		<dependency>
-	        <groupId>org.springframework.boot</groupId>
-	        <artifactId>spring-boot-starter</artifactId>
-	    </dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
 		<!-- springboot 测试 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -39,7 +39,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -62,10 +62,8 @@
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 		<!-- s缓存 -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-cache</artifactId>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-cache</artifactId> 
+			</dependency> -->
 		<!-- IO包 -->
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -77,7 +75,7 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
-		
+
 		<!--thymeleaf作为前端模板引擎，使用HTML文件，没法引入shiro的tag lib，此时如果要使用shiro的话， 可以引入 thymeleaf-extras-shiro.jar这个拓展包来曲线实现shiro的前端验证 -->
 		<dependency>
 			<groupId>com.github.theborakompanioni</groupId>
@@ -98,19 +96,13 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.47</version>
 		</dependency>
-		<!-- s个推 -->
-		<dependency>
-			<groupId>com.gexin.platform</groupId>
-			<artifactId>gexin-rp-sdk-http</artifactId>
-			<version>4.1.0.1</version>
-		</dependency>
 		<!-- mysql -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
 		<dependency>
 			<groupId>com.paypal.sdk</groupId>
@@ -158,7 +150,15 @@
 			<artifactId>mybatis-plus-boot-starter</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		
+
+		<!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
+		<dependency>
+			<groupId>p6spy</groupId>
+			<artifactId>p6spy</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -186,7 +186,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		
+
 	</build>
 
 </project>
