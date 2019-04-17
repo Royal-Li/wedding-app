@@ -1,5 +1,7 @@
 package com.application.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
+
 import com.application.entity.App_picture;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -11,6 +13,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Jason
  * @since 2019-04-17
  */
+@Mapper
 public interface App_pictureMapper extends BaseMapper<App_picture> {
 
 }
