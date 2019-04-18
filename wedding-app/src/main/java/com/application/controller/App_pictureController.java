@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.druid.support.logging.LogFactory;
 import com.application.entity.App_picture;
+import com.application.response.StatusResult;
 import com.application.service.IApp_pictureService;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 
@@ -36,13 +37,11 @@ public class App_pictureController {
 	
 	@ResponseBody
 	@RequestMapping(value="/picture",method=RequestMethod.GET)
-	public List<App_picture> getAppPicture() {
+	public StatusResult getAppPicture() {
 		
+		logger.info("后台  /picture");
 		List<App_picture> list = app_PictureService.list();
-		for(App_picture pic:list) {
-			System.out.println(pic.toString());
-		}
-		return list;
+		return StatusResult.ok(list);
 	}
 
 }
