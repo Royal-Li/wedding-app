@@ -1,6 +1,9 @@
 package com.application.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import com.application.entity.App_product;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -15,5 +18,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 @Mapper
 public interface App_productMapper extends BaseMapper<App_product> {
+
+	
+	List<App_product> queryProductByType(@Param("type")Integer type);
+
 
 }

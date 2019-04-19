@@ -7,8 +7,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * @author 刘国鑫 QQ:1598749808
- * @date 2018年7月22日
+ * @author 李忠硕 QQ:1598749808
+ * @date 2019年4月19日14:04:55
  * @Description 自定义json响应式结构
  * @version V1.0
  */

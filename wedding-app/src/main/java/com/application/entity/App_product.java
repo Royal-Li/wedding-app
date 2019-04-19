@@ -1,6 +1,8 @@
 package com.application.entity;
 
 import java.math.BigDecimal;
+import java.util.List;
+
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -54,8 +56,8 @@ public class App_product implements Serializable {
     @TableField("title")
     private String title;
 
-    @TableField("desc")
-    private String desc;
+    @TableField("description")
+    private String description;
 
     @TableField("price")
     private BigDecimal price;
@@ -89,6 +91,8 @@ public class App_product implements Serializable {
      */
     @TableField("type")
     private Integer type;
+    
+    List<App_product_picture> pictureList;
 
 
 }

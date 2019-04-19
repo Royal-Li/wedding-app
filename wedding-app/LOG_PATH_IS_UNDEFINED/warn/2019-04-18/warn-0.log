@@ -1,0 +1,14 @@
+2019-04-18 18:38:08.908 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]
+2019-04-18 18:38:16.429 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]
+2019-04-18 18:38:55.238 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]
+2019-04-18 18:39:23.255 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]
+2019-04-18 18:43:37.701 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]
+2019-04-18 18:44:10.102 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]
+2019-04-18 18:44:15.874 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.resource.ResourceHttpRequestHandler -
+				Path represents URL or has "url:" prefix: [http:/192.168.1.84:8080/wedding-app/222.jpg]

@@ -5,11 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.alibaba.druid.support.logging.LogFactory;
 import com.application.entity.App_picture;
 import com.application.response.StatusResult;
 import com.application.service.IApp_pictureService;
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 
 import java.util.List;
 
