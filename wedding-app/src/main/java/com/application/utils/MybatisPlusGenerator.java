@@ -50,7 +50,7 @@ public class MybatisPlusGenerator {
 		StrategyConfig sc = new StrategyConfig();
 		//sc.setColumnNaming(NamingStrategy.underline_to_camel);
 //		sc.setInclude(new String[] {"app_area","app_order","app_picture","app_product","app_store","app_user"});
-		sc.setInclude(new String[] {"app_product_picture"});
+		sc.setInclude(new String[] {"app_passenger"});
 		sc.setEntityLombokModel(true);
 		sc.setEntityTableFieldAnnotationEnable(true);
 		

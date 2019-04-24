@@ -2,6 +2,7 @@ package com.application.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
@@ -10,16 +11,16 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * app用户表
+ * app旅客表
  * </p>
  *
  * @author Jason
- * @since 2019-04-17
+ * @since 2019-04-24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class App_user implements Serializable {
+public class App_passenger implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,31 +30,36 @@ public class App_user implements Serializable {
     @TableField("name")
     private String name;
 
-    @TableField("tel")
-    private Long tel;
+    @TableField("mobile")
+    private String mobile;
 
-    @TableField("email")
-    private String email;
+    /**
+     * 身份证号
+     */
+    @TableField("identity_card")
+    private String identity_card;
 
-    @TableField("qq")
-    private String qq;
+    /**
+     * 护照号
+     */
+    @TableField("passport")
+    private String passport;
 
-    @TableField("qq_img")
-    private String qq_img;
+    /**
+     * 归属用户
+     */
+    @TableField("user_id")
+    private Integer user_id;
+
     
-    @TableField("login_name")
-    private String login_name;
-    
-    @TableField("login_password")
-    private String login_password;
-    
-    @TableField("token")
-    private String token;
-    
+    @TableField(exist=false)
+    private App_user appUser;
+
     @TableField("create_time")
-    private String create_time;
-    
+    private LocalDateTime create_time;
+
     @TableField("update_time")
-    private String update_time;
+    private LocalDateTime update_time;
+
 
 }

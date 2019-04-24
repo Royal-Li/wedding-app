@@ -35,11 +35,7 @@ public class App_product implements Serializable {
     @TableField("numb")
     private String numb;
 
-    /**
-     * 承办的店家的id
-     */
-    @TableField("store_id")
-    private Integer store_id;
+    
 
     /**
      * 目标城市 （外键）
@@ -92,7 +88,16 @@ public class App_product implements Serializable {
     @TableField("type")
     private Integer type;
     
+    /**
+     * 照片列表
+     */
+    @TableField(exist=false)
     List<App_product_picture> pictureList;
-
+    
+    /**
+     * 承办的店家
+     */
+    @TableField(exist=false)
+    App_store appStore;
 
 }

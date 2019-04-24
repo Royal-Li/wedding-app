@@ -1,0 +1,90 @@
+2019-04-24 12:00:01.699 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 13:55:29.599 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:24:30.553 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:24:30.578 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:24:44.201 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:24:47.968 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:24:59.122 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:24:59.166 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:25:17.085 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:25:52.929 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:26:30.391 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:34:30.641 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:06.006 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:06.183 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:06.183 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:06.185 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:06.185 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:20.749 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:47.804 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:47.815 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:47.817 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:47.816 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:51.787 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:35:53.002 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:37:27.283 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:39:04.497 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:39:04.502 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:39:35.812 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 14:39:35.812 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 15:31:11.941 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-04-24 15:31:53.287 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-04-24 15:32:46.695 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-04-24 15:51:51.168 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-24 17:25:41.395 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-24 17:26:00.515 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-24 17:26:28.099 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-24 20:03:54.710 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 20:04:06.876 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 20:04:13.506 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
+2019-04-24 20:05:03.816 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'app_passengerController' defined in file [E:\git\wedding\wedding-app\wedding-app\target\classes\com\application\controller\App_passengerController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.application.controller.App_passengerController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+	Syntax error, insert "EnumBody" to complete EnumDeclaration
+
+2019-04-24 20:18:30.455 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'app_passengerController' defined in file [E:\git\wedding\wedding-app\wedding-app\target\classes\com\application\controller\App_passengerController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.application.controller.App_passengerController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "}" to complete ClassBody
+	Syntax error, insert "... VariableDeclaratorId" to complete FormalParameterList
+	Syntax error, insert "... VariableDeclaratorId" to complete FormalParameter
+	Syntax error on token "}", delete this token
+

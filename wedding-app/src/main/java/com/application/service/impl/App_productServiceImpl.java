@@ -21,13 +21,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_product> implements IApp_productService {
 
-//	@Autowired
-//	App_productMapper productMapper;
+	@Autowired
+	App_productMapper productMapper;
 	
 	@Override
 	public List<App_product> queryProductByType(Integer type) {
 		List<App_product> list = baseMapper.queryProductByType(type);
 		return list;
+	}
+
+	@Override
+	public App_product queryProductDetail(Integer product_id) {
+		App_product product = productMapper.queryProductDetail(product_id);
+		return product;
 	}
 
 }

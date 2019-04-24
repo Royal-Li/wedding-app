@@ -36,7 +36,7 @@ public class App_productController {
 	IApp_productService productService;
 	
 	/**
-	 * @Description 根据类型查找
+	 * @Description 根据类型查找所有商品
 	 * @author Jason
 	 * @date Apr 19, 2019
 	 * @param type
@@ -47,12 +47,25 @@ public class App_productController {
 	public StatusResult getProductListByType(@PathVariable Integer type) {
 		
 		logger.info("后台 /product/list/{type}");
-		QueryWrapper<App_product> query = new QueryWrapper<>();
-		query.eq("type", type);
-		//List<App_product> list = productService.list(query);
 		List<App_product> list = productService.queryProductByType(type);
-		
 		return StatusResult.ok(list);
 	}
+	
+	/**
+	 * @Description 查询商品详细信息
+	 * @author Jason
+	 * @date Apr 22, 2019
+	 * @param product_id
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value="/product/detail/{product_id}", method=RequestMethod.GET)
+	public StatusResult getProductDetail(@PathVariable Integer product_id) {
+		logger.info("后台  /product/list/{id}");
+		App_product product = productService.queryProductDetail(product_id);
+		return StatusResult.ok(product);
+	}
+	
+	
 }
 

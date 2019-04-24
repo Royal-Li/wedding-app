@@ -24,6 +24,15 @@ public interface IApp_productService extends IService<App_product> {
 	 */
 	List<App_product> queryProductByType(Integer type);
 
+	/**
+	 * @Description 根据商品id 查询商品详细信息
+	 * @author Jason
+	 * @date Apr 22, 2019
+	 * @param product_id
+	 * @return
+	 */
+	App_product queryProductDetail(Integer product_id);
+
 	
 
 }
