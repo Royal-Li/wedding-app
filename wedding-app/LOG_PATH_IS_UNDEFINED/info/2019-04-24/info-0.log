@@ -1469,3 +1469,66 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2019-04-24 20:33:41.654 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2019-04-24 20:33:53.484 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2019-04-24 20:33:53.486 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-13} closed
+2019-04-24 20:33:53.777 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 14288 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-24 20:33:53.778 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-24 20:33:54.040 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-24 20:33:54.040 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-24 20:33:54.041 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-24 20:33:54.041 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-24 20:33:54.052 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-24 20:33:54.052 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 271 ms
+2019-04-24 20:33:54.092 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-14} inited
+2019-04-24 20:33:54.411 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-24 20:33:54.545 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-24 20:33:54.554 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-24 20:33:54.557 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-24 20:33:54.558 [INFO ] com.application.Application - Started Application in 0.826 seconds (JVM running for 11387.181)
+2019-04-24 20:33:54.559 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-24 20:34:01.063 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-24 20:34:01.064 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-24 20:34:01.066 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2019-04-24 20:34:01.066 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-24 20:34:01.087 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-24 20:34:16.279 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-24 20:34:20.586 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-24 20:34:22.072 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:34:22.081 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:34:29.774 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:34:29.782 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}
+2019-04-24 20:41:26.402 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:41:37.056 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-24 20:41:37.083 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-24 20:41:53.558 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-24 20:41:54.862 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:41:54.866 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:41:59.307 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:41:59.317 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}
+2019-04-24 20:42:23.709 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:42:23.717 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:42:44.400 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:42:44.403 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:42:48.619 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:42:48.628 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}
+2019-04-24 20:44:48.744 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-24 20:44:48.772 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-24 20:45:10.390 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-24 20:45:11.924 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:45:11.933 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:45:15.013 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:45:15.016 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}
+2019-04-24 20:46:30.024 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-24 20:46:30.051 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-24 20:46:43.215 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-24 20:46:44.581 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:46:44.591 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:46:59.326 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:46:59.334 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:47:31.549 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-24 20:47:31.570 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-24 20:48:34.438 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-24 20:48:36.311 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:48:36.315 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}
+2019-04-24 20:48:39.371 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:48:39.376 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}
+2019-04-24 20:48:46.707 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-24 20:48:46.710 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}

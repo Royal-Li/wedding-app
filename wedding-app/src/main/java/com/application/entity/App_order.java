@@ -45,21 +45,27 @@ public class App_order implements Serializable {
     @TableField("product_id")
     private Integer product_id;
 
-    @TableField("img_url")
-    private String img_url;
-
-    /**
-     * 跳转地址
-     */
-    @TableField("link_url")
-    private String link_url;
-
-    /**
-     * 实付金额
-     */
     @TableField("price")
-    private BigDecimal price;
+    private String price;
 
+    /**
+     *联系人姓名
+     */
+    @TableField("buyer_name")
+    private String buyer_name;
+
+    /**
+     * 实付电话
+     */
+    @TableField("buyer_mobile")
+    private String buyer_mobile;
+    
+    /**
+     * 联系人邮箱
+     */
+    @TableField("buyer_email")
+    private String buyer_email;
+    
     /**
      * 订单状态 未支付 已支付 待出行  已取消
      */
@@ -74,6 +80,12 @@ public class App_order implements Serializable {
 
     @TableField("update_time")
     private String update_time;
+    
+    @TableField(exist=false)
+    private App_product product;
+    
+    @TableField(exist=false)
+    private App_user user;
 
 
 }

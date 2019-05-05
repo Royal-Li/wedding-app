@@ -1,6 +1,7 @@
 package com.application.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.application.entity.App_product;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -32,6 +33,23 @@ public interface IApp_productService extends IService<App_product> {
 	 * @return
 	 */
 	App_product queryProductDetail(Integer product_id);
+	
+	/**
+	 * @Description 根据目的地查询相应的商品列表
+	 * @author Jason
+	 * @date May 5, 2019
+	 * @param id
+	 * @return
+	 */
+	List<App_product> queryProductListByDestination(Integer id);
+
+	/**
+	 * @Description 获取首页推荐商品
+	 * @author Jason
+	 * @date May 5, 2019
+	 * @return
+	 */
+	Map<String, Object> queryRecommendProduct();
 
 	
 

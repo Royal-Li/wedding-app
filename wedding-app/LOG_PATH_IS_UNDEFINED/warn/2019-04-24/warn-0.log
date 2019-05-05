@@ -88,3 +88,5 @@
 	Syntax error, insert "... VariableDeclaratorId" to complete FormalParameter
 	Syntax error on token "}", delete this token
 
+2019-04-24 20:41:26.431 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
+				Resolved [com.application.exception.NotAuthException: 没有token认证信息]

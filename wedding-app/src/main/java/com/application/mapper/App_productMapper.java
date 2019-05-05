@@ -22,7 +22,9 @@ public interface App_productMapper extends BaseMapper<App_product> {
 	
 	List<App_product> queryProductByType(@Param("type")Integer type);
 
-	App_product queryProductDetail(Integer product_id);
+	App_product queryProductDetail(@Param("product_id") Integer product_id);
+
+	List<App_product> queryProductListByDestination(@Param("target_city")Integer id);
 
 
 }

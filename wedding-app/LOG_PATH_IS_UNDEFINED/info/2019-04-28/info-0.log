@@ -1,0 +1,652 @@
+2019-04-28 09:29:04.284 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 09:29:04.286 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 09:29:04.381 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-28 09:29:04.381 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-28 09:29:08.811 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 09:29:08.828 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 09:29:08.840 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 09:29:08.840 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 09:29:08.852 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-04-28 09:29:09.016 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 09:29:09.017 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4634 ms
+2019-04-28 09:29:09.770 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-04-28 09:29:12.882 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 09:29:13.860 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 09:29:13.919 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 09:29:13.983 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 09:29:13.986 [INFO ] com.application.Application - Started Application in 10.619 seconds (JVM running for 12.496)
+2019-04-28 09:29:33.614 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 09:29:33.614 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 09:29:33.621 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-04-28 09:29:33.709 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 09:29:33.709 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 09:29:45.990 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-28 09:29:51.689 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-28 09:29:51.938 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-04-28 09:29:55.182 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-28 09:30:06.457 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-28 09:30:07.284 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-28 09:30:07.294 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-04-28 09:30:20.437 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-28 09:30:20.449 [INFO ] com.application.controller.App_passengerController - 后台 /passenger/{user_id}/{passenger_id}
+2019-04-28 09:30:54.994 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 09:31:11.040 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 09:31:19.580 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 09:31:22.401 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 09:32:06.790 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 09:32:43.074 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 09:32:45.895 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 09:57:40.354 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:12:26.610 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:12:26.689 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:12:30.095 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:12:32.280 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:12:42.018 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:13:00.974 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:13:00.987 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:13:04.845 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:13:06.982 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:13:33.763 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:13:33.930 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:13:37.240 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:13:39.111 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:14:39.588 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:14:39.759 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:14:43.080 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:14:45.213 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:15:12.174 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:15:12.239 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:15:39.403 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:15:43.266 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:18:15.841 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 10:18:15.846 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-04-28 10:18:16.314 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 10:18:16.314 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 10:18:16.905 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 10:18:16.907 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 10:18:16.908 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 10:18:16.908 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 10:18:16.948 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 10:18:16.948 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 630 ms
+2019-04-28 10:18:17.022 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2019-04-28 10:18:17.583 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 10:18:17.800 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 10:18:17.818 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 10:18:17.823 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 10:18:17.823 [INFO ] com.application.Application - Started Application in 1.641 seconds (JVM running for 2956.333)
+2019-04-28 10:18:17.827 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 10:27:37.728 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 10:27:37.729 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 10:27:37.734 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-04-28 10:27:37.736 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:27:37.836 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:27:42.608 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:29:14.133 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:29:14.410 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:29:18.429 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:31:03.708 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:32:16.418 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 10:32:16.428 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+2019-04-28 10:32:16.696 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 10:32:16.696 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 10:32:17.083 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 10:32:17.084 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 10:32:17.085 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 10:32:17.085 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 10:32:17.102 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 10:32:17.102 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 404 ms
+2019-04-28 10:32:17.151 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+2019-04-28 10:32:17.513 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 10:32:17.682 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 10:32:17.693 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 10:32:17.696 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 10:32:17.697 [INFO ] com.application.Application - Started Application in 1.038 seconds (JVM running for 3796.207)
+2019-04-28 10:32:17.698 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 10:32:29.650 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 10:32:29.651 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 10:32:29.655 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-04-28 10:32:29.657 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:33:08.622 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:33:08.659 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:33:12.116 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:36:49.485 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:36:50.872 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:36:53.758 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:36:56.208 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:38:35.197 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 10:38:35.198 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2019-04-28 10:38:35.471 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 10:38:35.471 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 10:38:35.851 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 10:38:35.851 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 10:38:35.851 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 10:38:35.851 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 10:38:35.893 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 10:38:35.897 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 424 ms
+2019-04-28 10:38:35.944 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2019-04-28 10:38:36.309 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 10:38:36.448 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 10:38:36.462 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 10:38:36.467 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 10:38:36.469 [INFO ] com.application.Application - Started Application in 1.04 seconds (JVM running for 4174.978)
+2019-04-28 10:38:36.471 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 10:38:52.419 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 10:38:52.421 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 10:38:52.426 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-04-28 10:38:52.429 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:38:57.834 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 10:40:07.460 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:41:24.321 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:41:24.758 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:41:27.760 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:41:46.675 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:47:32.429 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:47:32.457 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:47:36.654 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:48:27.220 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:48:31.661 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:49:39.711 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:49:39.746 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:49:46.444 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:51:51.012 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 10:51:51.040 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 10:51:54.496 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 10:51:58.682 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 11:02:35.431 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 11:02:35.479 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 11:02:38.973 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:03:04.125 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:03:36.093 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 11:03:36.136 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 11:03:40.328 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:04:20.824 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 11:04:20.886 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 11:04:25.128 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 11:04:25.149 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 11:04:33.807 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:04:58.778 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 11:04:58.806 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 11:05:04.161 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:05:05.351 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:05:09.958 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:10:42.074 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:10:45.658 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:10:56.248 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:11:13.866 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:17:50.179 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:17:52.436 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:17:54.034 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:17:56.492 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:17:58.502 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:17:59.317 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:00.132 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:01.204 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 11:18:07.865 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:09.485 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 11:18:14.802 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:15.452 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:16.227 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:16.947 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:17.710 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:18.223 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 11:18:18.765 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:18:51.639 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:18:52.171 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:20:04.855 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:20:04.892 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:20:17.978 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-28 15:20:19.658 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-04-28 15:20:19.694 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-04-28 15:32:48.698 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:32:49.195 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:32:59.304 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:32:59.730 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:33:05.914 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:33:07.449 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:33:08.408 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:33:09.629 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:33:10.656 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:33:11.998 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 15:47:38.274 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 15:47:41.558 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 15:47:58.896 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:47:58.923 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:48:34.497 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:48:34.529 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:48:57.646 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:48:57.656 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:49:11.121 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:49:11.145 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:54:38.594 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:54:38.609 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:55:00.625 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:55:00.892 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:55:04.744 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 15:56:43.818 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:56:43.846 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 15:59:50.973 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 15:59:51.094 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:00:06.276 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:00:06.680 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:00:13.950 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:00:14.562 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:00:16.987 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:00:18.031 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:00:19.830 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:00:22.150 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:00:34.590 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:00:34.894 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:03:05.871 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:03:05.904 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:04:07.040 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:04:07.110 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:04:28.116 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:04:28.141 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:10:59.277 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:10:59.495 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:13:18.241 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:13:18.274 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:15:00.051 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:15:00.084 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:15:15.413 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:15:15.431 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:17:02.045 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:17:02.135 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:17:05.555 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:17:05.596 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:20:11.018 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:15.001 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:17.126 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:18.701 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:20.203 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:20.878 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:21.904 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:20:26.132 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:20:26.150 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:20:26.197 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 16:24:10.364 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:24:12.512 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:31:30.608 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:31:30.634 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:31:34.077 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:31:36.014 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:33:54.066 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:33:54.121 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:33:58.162 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:34:00.843 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:36:11.322 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:36:11.353 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:36:14.370 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:36:16.134 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:36:18.163 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:37:34.271 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:37:35.191 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:40:00.393 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:40:06.459 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:40:08.174 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:40:12.347 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:40:17.312 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:41:14.852 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:41:15.132 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:41:18.989 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:41:27.491 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:41:54.487 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:42:13.321 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:42:14.455 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:43:19.143 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-04-28 16:43:19.200 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-04-28 16:43:23.914 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:43:25.306 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 16:43:26.401 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:43:39.576 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:48:17.688 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 16:55:07.431 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 16:55:07.435 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+2019-04-28 16:55:07.934 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 16:55:07.934 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 16:55:08.403 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 16:55:08.404 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 16:55:08.404 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 16:55:08.405 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 16:55:08.418 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 16:55:08.418 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 481 ms
+2019-04-28 16:55:08.473 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-5} inited
+2019-04-28 16:55:08.833 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 16:55:08.995 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 16:55:09.009 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 16:55:09.014 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 16:55:09.015 [INFO ] com.application.Application - Started Application in 1.169 seconds (JVM running for 26767.635)
+2019-04-28 16:55:09.016 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 17:11:48.604 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 17:11:48.606 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-5} closed
+2019-04-28 17:11:48.926 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 17:11:48.926 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 17:11:49.278 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 17:11:49.278 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 17:11:49.279 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 17:11:49.279 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 17:11:49.291 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 17:11:49.293 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 364 ms
+2019-04-28 17:11:49.340 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-6} inited
+2019-04-28 17:11:49.727 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 17:11:49.866 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 17:11:49.876 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 17:11:49.879 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 17:11:49.879 [INFO ] com.application.Application - Started Application in 1.018 seconds (JVM running for 27768.499)
+2019-04-28 17:11:49.881 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 17:12:23.163 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 17:12:23.168 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-6} closed
+2019-04-28 17:12:23.448 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 5300 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 17:12:23.448 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 17:12:23.759 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 17:12:23.760 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 17:12:23.760 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 17:12:23.760 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 17:12:23.773 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 17:12:23.773 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 322 ms
+2019-04-28 17:12:23.817 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-7} inited
+2019-04-28 17:12:24.092 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 17:12:24.224 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 17:12:24.231 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 17:12:24.235 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 17:12:24.235 [INFO ] com.application.Application - Started Application in 0.818 seconds (JVM running for 27802.855)
+2019-04-28 17:12:24.237 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:40:51.413 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:40:51.431 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:40:51.735 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-28 18:40:51.735 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-28 18:40:57.072 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:40:57.114 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:40:57.157 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:40:57.157 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:40:57.190 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-04-28 18:40:57.357 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:40:57.357 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5621 ms
+2019-04-28 18:40:58.178 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-04-28 18:41:00.591 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:41:01.350 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:41:01.446 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:41:01.543 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:41:01.548 [INFO ] com.application.Application - Started Application in 12.816 seconds (JVM running for 15.85)
+2019-04-28 18:41:07.699 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:41:07.721 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-04-28 18:41:08.345 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:41:08.345 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:41:09.417 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:41:09.428 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:41:09.430 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:41:09.433 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:41:09.662 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:41:09.663 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1310 ms
+2019-04-28 18:41:09.835 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2019-04-28 18:41:11.061 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:41:11.523 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:41:11.613 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:41:11.626 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:41:11.660 [INFO ] com.application.Application - Started Application in 3.597 seconds (JVM running for 25.963)
+2019-04-28 18:41:11.663 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:42:36.457 [INFO ] org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1553567003; UM_distinctid=169c3b6eef1843-0796f27fab9f54-5701631-1fa400-169c3b6eef2fa; CNZZDATA1256912241=484211180-1553764090-%7C1553825635; JSESSIONID=8C0C3019D8285A89F75C71955146E1E7; SESSION=YTNlMmJkMzQtZjExZC00OWZlLWI1NDEtNDU3ZTcwNDA2M2Vj] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-04-28 18:42:36.465 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:42:36.465 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:42:36.474 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-04-28 18:43:18.451 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:43:18.472 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+2019-04-28 18:43:18.915 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:43:18.917 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:43:19.690 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:43:19.691 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:43:19.692 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:43:19.693 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:43:19.724 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:43:19.724 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 800 ms
+2019-04-28 18:43:19.840 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+2019-04-28 18:43:20.718 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:43:20.986 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:43:21.012 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:43:21.025 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:43:21.031 [INFO ] com.application.Application - Started Application in 2.229 seconds (JVM running for 155.333)
+2019-04-28 18:43:21.063 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:43:24.918 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:43:24.919 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:43:24.922 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-04-28 18:44:44.870 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:44:44.874 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2019-04-28 18:44:45.355 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:44:45.359 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:44:46.933 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:44:46.936 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:44:46.936 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:44:46.936 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:44:46.982 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:44:46.982 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1619 ms
+2019-04-28 18:44:47.242 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2019-04-28 18:44:48.667 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:44:48.947 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:44:48.963 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:44:48.968 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:44:48.970 [INFO ] com.application.Application - Started Application in 3.742 seconds (JVM running for 243.272)
+2019-04-28 18:44:48.977 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:47:58.085 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:47:58.087 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+2019-04-28 18:47:58.514 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:47:58.514 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:47:59.032 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:47:59.033 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:47:59.033 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:47:59.033 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:47:59.045 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:47:59.045 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 527 ms
+2019-04-28 18:47:59.118 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-5} inited
+2019-04-28 18:47:59.672 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:47:59.839 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:47:59.852 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:47:59.857 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:47:59.857 [INFO ] com.application.Application - Started Application in 1.505 seconds (JVM running for 434.159)
+2019-04-28 18:47:59.859 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:48:19.401 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:48:19.404 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-5} closed
+2019-04-28 18:48:19.725 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:48:19.725 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:48:20.163 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:48:20.166 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:48:20.168 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:48:20.169 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:48:20.185 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:48:20.185 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 456 ms
+2019-04-28 18:48:20.243 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-6} inited
+2019-04-28 18:48:20.633 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:48:20.866 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:48:20.881 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:48:20.887 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:48:20.890 [INFO ] com.application.Application - Started Application in 1.24 seconds (JVM running for 455.193)
+2019-04-28 18:48:20.894 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:48:38.112 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:48:38.113 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:48:38.116 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-04-28 18:50:04.313 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:50:04.314 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-6} closed
+2019-04-28 18:50:04.722 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:50:04.722 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:50:05.080 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:50:05.081 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:50:05.082 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:50:05.082 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:50:05.095 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:50:05.095 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 370 ms
+2019-04-28 18:50:05.157 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-7} inited
+2019-04-28 18:50:05.547 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:50:05.702 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:50:05.714 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:50:05.720 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:50:05.721 [INFO ] com.application.Application - Started Application in 1.129 seconds (JVM running for 560.023)
+2019-04-28 18:50:05.725 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:50:19.734 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:50:19.736 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-7} closed
+2019-04-28 18:50:20.035 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:50:20.035 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:50:20.436 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:50:20.438 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:50:20.439 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:50:20.439 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:50:20.466 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:50:20.466 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 428 ms
+2019-04-28 18:50:20.520 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-8} inited
+2019-04-28 18:50:20.866 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:50:21.011 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:50:21.022 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:50:21.027 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:50:21.028 [INFO ] com.application.Application - Started Application in 1.044 seconds (JVM running for 575.33)
+2019-04-28 18:50:21.030 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:50:27.154 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:50:27.155 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:50:27.159 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-04-28 18:51:08.024 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:51:08.026 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-8} closed
+2019-04-28 18:51:08.432 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 4536 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:51:08.432 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:51:08.802 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:51:08.802 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:51:08.802 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:51:08.803 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:51:08.813 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:51:08.813 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 378 ms
+2019-04-28 18:51:08.867 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-9} inited
+2019-04-28 18:51:09.347 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:51:09.661 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:51:09.681 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:51:09.686 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:51:09.687 [INFO ] com.application.Application - Started Application in 1.345 seconds (JVM running for 623.989)
+2019-04-28 18:51:09.690 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:51:27.052 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 17444 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:51:27.061 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:51:27.142 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-28 18:51:27.144 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-28 18:51:29.583 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:51:29.611 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:51:29.624 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:51:29.624 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:51:29.642 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-04-28 18:51:29.788 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:51:29.789 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2645 ms
+2019-04-28 18:51:30.275 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-04-28 18:51:31.547 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:51:32.004 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:51:32.044 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:51:32.110 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:51:32.113 [INFO ] com.application.Application - Started Application in 5.859 seconds (JVM running for 7.066)
+2019-04-28 18:51:44.857 [INFO ] org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1553567003; UM_distinctid=169c3b6eef1843-0796f27fab9f54-5701631-1fa400-169c3b6eef2fa; CNZZDATA1256912241=484211180-1553764090-%7C1553825635; JSESSIONID=8C0C3019D8285A89F75C71955146E1E7; SESSION=YTNlMmJkMzQtZjExZC00OWZlLWI1NDEtNDU3ZTcwNDA2M2Vj] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-04-28 18:51:44.864 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:51:44.865 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:51:44.877 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2019-04-28 18:53:40.746 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:53:40.751 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-04-28 18:53:41.114 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 17444 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:53:41.115 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:53:42.170 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:53:42.171 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:53:42.171 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:53:42.171 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:53:42.202 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:53:42.203 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1083 ms
+2019-04-28 18:53:42.334 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2019-04-28 18:53:43.486 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:54:16.184 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 16352 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:54:16.186 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:54:16.248 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-28 18:54:16.249 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-28 18:54:18.230 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:54:18.245 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:54:18.257 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:54:18.257 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:54:18.270 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-04-28 18:54:18.362 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:54:18.363 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2114 ms
+2019-04-28 18:54:18.815 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-04-28 18:54:19.696 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:54:20.064 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:54:20.104 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:54:20.132 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:54:20.136 [INFO ] com.application.Application - Started Application in 4.262 seconds (JVM running for 4.908)
+2019-04-28 18:54:23.254 [INFO ] org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1553567003; UM_distinctid=169c3b6eef1843-0796f27fab9f54-5701631-1fa400-169c3b6eef2fa; CNZZDATA1256912241=484211180-1553764090-%7C1553825635; JSESSIONID=8C0C3019D8285A89F75C71955146E1E7; SESSION=YTNlMmJkMzQtZjExZC00OWZlLWI1NDEtNDU3ZTcwNDA2M2Vj] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-04-28 18:54:23.261 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:54:23.261 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:54:23.268 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-04-28 18:56:16.613 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:56:16.623 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-04-28 18:56:17.003 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 16352 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:56:17.003 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:56:17.813 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:56:17.814 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:56:17.815 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:56:17.815 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:56:18.039 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:56:18.039 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1032 ms
+2019-04-28 18:56:18.130 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2019-04-28 18:56:18.838 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:56:19.070 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:56:19.089 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:56:19.093 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:56:19.094 [INFO ] com.application.Application - Started Application in 2.185 seconds (JVM running for 123.865)
+2019-04-28 18:56:19.097 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:56:46.909 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:56:46.914 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+2019-04-28 18:56:47.328 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 16352 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:56:47.329 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:56:47.849 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:56:47.853 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:56:47.853 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:56:47.853 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:56:47.869 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:56:47.870 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 537 ms
+2019-04-28 18:56:47.938 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+2019-04-28 18:56:48.644 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:56:48.885 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:56:48.906 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:56:48.911 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:56:48.912 [INFO ] com.application.Application - Started Application in 1.663 seconds (JVM running for 153.684)
+2019-04-28 18:56:48.915 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 18:57:01.574 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 18:57:01.574 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 18:57:01.579 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-04-28 18:57:39.182 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:57:39.185 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2019-04-28 18:57:39.507 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 16352 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-04-28 18:57:39.507 [INFO ] com.application.Application - The following profiles are active: test
+2019-04-28 18:57:40.084 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-04-28 18:57:40.084 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:57:40.086 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-28 18:57:40.086 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-28 18:57:40.102 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-04-28 18:57:40.103 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 582 ms
+2019-04-28 18:57:40.195 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2019-04-28 18:57:40.675 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 18:57:40.892 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-28 18:57:40.916 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-04-28 18:57:40.922 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-04-28 18:57:40.922 [INFO ] com.application.Application - Started Application in 1.483 seconds (JVM running for 205.694)
+2019-04-28 18:57:40.924 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-04-28 19:03:13.841 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 19:03:13.843 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-28 19:03:13.848 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-04-28 19:03:21.524 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:03:23.404 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:03:23.959 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:03:24.407 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:03:25.268 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:03:25.844 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:03:30.627 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 19:03:36.004 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 19:03:39.152 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 19:03:41.430 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 19:03:42.052 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-04-28 19:03:43.485 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-04-28 19:04:13.196 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-04-28 19:04:16.193 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-04-28 19:04:34.208 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:04:38.170 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:04:40.644 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:04:41.954 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-04-28 19:04:57.423 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}

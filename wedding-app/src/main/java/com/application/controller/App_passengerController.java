@@ -36,9 +36,9 @@ public class App_passengerController {
 	IApp_passengerService passengerService;
 	
 	@ResponseBody
-	@RequestMapping(value="/passenger/{user_id}", method=RequestMethod.GET)
-	public StatusResult getPassenger(@PathVariable Integer user_id) {
-		logger.info("后台 /passenger/{user_id}");
+	@RequestMapping(value="/user/{user_id}", method=RequestMethod.GET)
+	public StatusResult getPassengerList(@PathVariable Integer user_id) {
+		logger.info("后台 /user/{user_id}");
 		QueryWrapper<App_passenger> query = new QueryWrapper<>();
 		query.eq("user_id", user_id);
 		List<App_passenger> list = passengerService.list(query);
@@ -55,6 +55,35 @@ public class App_passengerController {
 			return StatusResult.ok();
 		}
 		return StatusResult.error("删除失败");
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/passenger/{user_id}",method=RequestMethod.POST)
+	public StatusResult saveOrUpdatePassenger(@PathVariable Integer user_id, Integer passenger_id, String name, String mobile, String identity_card, String passport) {
+		
+		App_passenger passenger = new App_passenger();
+		if(passenger_id!=null) {
+			passenger.setId(passenger_id);
+		}
+		passenger.setName(name);
+		passenger.setMobile(mobile);
+		passenger.setIdentity_card(identity_card);
+		passenger.setPassport(passport);
+		passenger.setUser_id(user_id);
+		boolean result = passengerService.saveOrUpdate(passenger);
+		if(result) {
+			return StatusResult.ok();
+		}
+		return StatusResult.error("添加失败");
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/passenger/{passenger_id}",method=RequestMethod.GET)
+	public StatusResult getPassenger(@PathVariable Integer passenger_id) {
+		
+		App_passenger passenger = passengerService.getById(passenger_id);
+		
+		return StatusResult.ok(passenger);
 	}
 
 }

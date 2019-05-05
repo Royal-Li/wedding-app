@@ -1708,3 +1708,4 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172)
 	... 24 common frames omitted
+2019-04-24 20:41:26.403 [http-nio-8080-exec-4] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  没有token认证信息

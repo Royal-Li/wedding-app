@@ -1,60 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.application.mapper.App_productMapper">
-	<resultMap id="BaseResultMap" type="com.application.entity.App_product">
+	<resultMap id="BaseResultMap"
+		type="com.application.entity.App_product">
 		<id column="id" jdbcType="INTEGER" property="id" />
 		<result column="numb" jdbcType="VARCHAR" property="numb" />
-		<result column="target_city" jdbcType="INTEGER" property="target_city" />
-		<result column="start_city" jdbcType="VARCHAR" property="start_city" />
+		<result column="target_city" jdbcType="INTEGER"
+			property="target_city" />
+		<result column="start_city" jdbcType="VARCHAR"
+			property="start_city" />
 		<result column="title" jdbcType="VARCHAR" property="title" />
-		<result column="description" jdbcType="VARCHAR" property="description" />
+		<result column="description" jdbcType="VARCHAR"
+			property="description" />
 		<result column="price" jdbcType="DOUBLE" property="price" />
-		<result column="product_detail_text" jdbcType="VARCHAR" property="product_detail_text" />
-		<result column="example_img" jdbcType="VARCHAR" property="example_img" />
+		<result column="product_detail_text" jdbcType="VARCHAR"
+			property="product_detail_text" />
+		<result column="example_img" jdbcType="VARCHAR"
+			property="example_img" />
 		<result column="config" jdbcType="VARCHAR" property="config" />
-		<result column="price_detial" jdbcType="VARCHAR" property="price_detial" />
+		<result column="price_detial" jdbcType="VARCHAR"
+			property="price_detial" />
 		<result column="type" jdbcType="INTEGER" property="type" />
-		<association property="appStore" javaType="com.application.entity.App_store">
-			<id column="store_id" property="id"/>
+		<association property="appStore"
+			javaType="com.application.entity.App_store">
+			<id column="store_id" property="id" />
 			<result column="store_name" property="name" />
 			<result column="store_img_url" property="img_url" />
+			<result column="store_tel" property="tel" />
 		</association>
-		<collection property="pictureList" ofType="com.application.entity.App_product_picture">
+		<collection property="pictureList"
+			ofType="com.application.entity.App_product_picture">
 			<id column="picture_id" property="id" />
 			<result column="img_url" property="img_url" />
 			<result column="mark" property="mark" />
 			<result column="sort" property="sort" />
 		</collection>
 	</resultMap>
-
-	<select id="queryProductByType" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+	<!-- s根据类型查找商品 -->
+	<select id="queryProductByType"
+		parameterType="java.lang.Integer" resultMap="BaseResultMap">
 		SELECT
-			ap.id,ap.numb,ap.title,ap.description,ap.price,ap.product_detail_text,ap.example_img,ap.config,ap.price_detial,ap.type,
-			app.id AS picture_id,app.img_url,app.mark,app.sort,
-			ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url
+		ap.id,ap.numb,ap.title,ap.description,ap.price,
+		app.id AS picture_id,app.img_url,app.mark,app.sort,
+		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,
+		ast.tel as store_tel
 		FROM
-			app_product ap,
-			app_product_picture app,
-			app_store ast
+		app_product ap,
+		app_product_picture app,
+		app_store ast
 		WHERE
-			app.product_id = ap.id
+		app.product_id = ap.id
 		AND ast.id = ap.store_id
 		AND ap.type = #{type,jdbcType=INTEGER}
 	</select>
-	<select id="queryProductDetail" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+	<!-- s根据id 查找商品详情 -->
+	<select id="queryProductDetail"
+		parameterType="java.lang.Integer" resultMap="BaseResultMap">
 		SELECT
-			ap.id,ap.numb,ap.title,ap.description,ap.price,ap.product_detail_text,ap.example_img,ap.config,ap.price_detial,ap.type,ap.start_city,
-			app.id AS picture_id,app.img_url,app.mark,app.sort,
-			ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.product_detail_text,ap.example_img,ap.config,ap.price_detial,ap.type,ap.start_city,
+		app.id AS picture_id,app.img_url,app.mark,app.sort,
+		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url, ast.tel as store_tel
 		FROM
-			app_product ap,
-			app_product_picture app,
-			app_store ast
+		app_product ap,
+		app_product_picture app,
+		app_store ast
 		WHERE
-			app.product_id = ap.id
+		app.product_id = ap.id
 		AND ast.id = ap.store_id
-		AND ap.id = #{product_id,jdbcType=INTEGER}
+		AND ap.id =
+		#{product_id,jdbcType=INTEGER}
 	</select>
-	
-	
+	<!-- s根据目的地查找商品列表 -->
+	<select id="queryProductListByDestination"
+		parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		SELECT
+		ap.id,ap.numb,ap.title,ap.description,ap.price,
+		app.id AS picture_id,app.img_url,app.mark,app.sort,
+		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,
+		ast.tel as store_tel
+		FROM
+		app_product ap
+		LEFT JOIN app_store ast ON ap.store_id = ast.id
+		LEFT JOIN app_area aa ON ap.target_city = aa.id
+		LEFT JOIN app_product_picture app ON app.product_id = ap.id
+		WHERE ap.target_city = #{target_city,jdbcType=INTEGER}
+	</select>
+
+
+
 </mapper>

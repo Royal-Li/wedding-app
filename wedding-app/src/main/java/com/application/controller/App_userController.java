@@ -53,7 +53,7 @@ public class App_userController {
 			Cookie cookie = new Cookie("token", token);
 			cookie.setPath("/");
 			cookie.isHttpOnly();
-			cookie.setMaxAge(60);//s过期时间一分钟
+			cookie.setMaxAge(60*60);//s过期时间一分钟
 			response.addCookie(cookie);
 		}else {
 			return StatusResult.error("登录出错");

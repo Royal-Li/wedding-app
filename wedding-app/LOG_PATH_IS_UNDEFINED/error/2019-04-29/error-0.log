@@ -1,0 +1,1 @@
+2019-04-29 15:58:39.827 [http-nio-8080-exec-1] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  没有token认证信息

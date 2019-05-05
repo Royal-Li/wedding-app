@@ -1,5 +1,6 @@
 package com.application.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
@@ -55,10 +56,10 @@ public class App_passenger implements Serializable {
     @TableField(exist=false)
     private App_user appUser;
 
-    @TableField("create_time")
+    @TableField(value="create_time")
     private LocalDateTime create_time;
 
-    @TableField("update_time")
+    @TableField(value = "update_time",update="now()")
     private LocalDateTime update_time;
 
 

@@ -127,13 +127,13 @@ public class StatusResult implements Serializable {
 	}
 
 	/**
-	 * 失效
+	 * token错误
 	 * 
 	 * @param msg
 	 * @return
 	 */
-	public static StatusResult loginInvalid() {
-		return new StatusResult(400, ResponseStatusMsg.LOGIN_INVALID.getMsg(), null);
+	public static StatusResult tokenInvalid(String msg) {
+		return new StatusResult(400, msg, null);
 	}
 	
 	/**

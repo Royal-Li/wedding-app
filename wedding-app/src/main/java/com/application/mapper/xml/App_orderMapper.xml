@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.application.mapper.App_orderMapper">
+	<resultMap id="BaseResultMap" type="com.application.entity.App_order">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="order_num" jdbcType="VARCHAR" property="order_num" />
+		<result column="buyer_name" jdbcType="VARCHAR" property="buyer_name" />
+		<result column="buyer_mobile" jdbcType="VARCHAR" property="buyer_mobile" />
+		<result column="buyer_email" jdbcType="VARCHAR" property="buyer_email" />
+		<result column="price" jdbcType="DOUBLE" property="price" />
+		<result column="status" jdbcType="INTEGER" property="status" />
+		<association property="product" javaType="com.application.entity.App_product" column="product_id" select="com.application.mapper.App_productMapper.queryProductDetail"></association>
+	</resultMap>
+	<resultMap id="BaseResultMap2" type="com.application.entity.App_order" extends="BaseResultMap">
+		<association property="user" javaType="com.application.entity.App_user" select="selectUser" column="user_id"></association>
+	</resultMap>
+	<select id="selectUser" resultType="com.application.entity.App_user">
+		select * FROM app_user au
+		where au.id = #{user_id,jdbcType=INTEGER}
+	</select>
+
+	<select id="getOrderListByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap2">
+		SELECT ao.* 
+		FROM app_order ao 
+		LEFT JOIN app_user au ON ao.user_id = au.id
+		WHERE ao.user_id = #{user_id,jdbcType=INTEGER} 
+		<if test="type != null">
+			and ao.status =#{type,jdbcType=INTEGER}
+		</if>
+	</select>
+	<!-- s修改订单状态 -->
+	<update id="updateOrderStatus">
+		UPDATE app_order 
+		SET `status` = #{status,jdbcType=INTEGER} 
+		WHERE id = #{order_id,jdbcType=INTEGER}
+	</update>
 
 </mapper>

@@ -12,6 +12,7 @@ import com.application.service.IApp_productService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +35,20 @@ public class App_productController {
 	
 	@Autowired
 	IApp_productService productService;
+	
+	
+	/**
+	 * @Description 首页推荐商品
+	 * @author Jason
+	 * @date May 5, 2019
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value="/index/recommend",method=RequestMethod.GET)
+	public StatusResult getRecommendProduct() {
+		Map<String, Object> recommend = productService.queryRecommendProduct();
+		return StatusResult.ok(recommend);
+	}
 	
 	/**
 	 * @Description 根据类型查找所有商品
@@ -66,6 +81,20 @@ public class App_productController {
 		return StatusResult.ok(product);
 	}
 	
+	/**
+	 * @Description
+	 * @author Jason
+	 * @date May 5, 2019
+	 * @param id
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value="/destination/{id}",method=RequestMethod.GET)
+	public StatusResult getProductListByDestination(@PathVariable Integer id) {
+		List<App_product> list = productService.queryProductListByDestination(id);
+		return StatusResult.ok(list);
+		
+	}
 	
 }
 

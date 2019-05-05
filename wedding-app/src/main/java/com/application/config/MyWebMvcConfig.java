@@ -20,6 +20,7 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	public void addInterceptors(InterceptorRegistry registry) {
 		List<String> patterns = new ArrayList<>();
 		patterns.add("/app_passenger/**");
+		patterns.add("/app_order/**");
 		registry.addInterceptor(tokenInterceptor).addPathPatterns(patterns);
 		//WebMvcConfigurer.super.addInterceptors(registry);
 	}

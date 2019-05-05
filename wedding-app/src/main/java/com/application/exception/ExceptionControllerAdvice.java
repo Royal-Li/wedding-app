@@ -52,13 +52,14 @@ public class ExceptionControllerAdvice {
     	StatusResult result = null;
     	
     	if(ex instanceof NotAuthException) {
-    		result = StatusResult.error("token错误");
+    		result = StatusResult.tokenInvalid("token错误");
     	}else if (ex instanceof TokenExpirationException){
-    		result = StatusResult.error("token过期");
+    		result = StatusResult.tokenInvalid("token过期");
     	}
     	
     	{
     		result = StatusResult.error("系统错误");
+    		ex.printStackTrace();
         }
         
         return result;

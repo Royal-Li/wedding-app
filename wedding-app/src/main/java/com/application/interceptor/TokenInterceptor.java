@@ -75,6 +75,8 @@ public class TokenInterceptor implements HandlerInterceptor {
 		String userName = claims.getIssuer();
 		String password = claims.getSubject();
 		App_user app_user = userService.getById(id);
+		
+		//s如果参数中有 user_id 应该拿着user_id和token解密的id比较一下
 		if(null!=app_user) {
 			if(!password.equals(app_user.getLogin_password())) {
 				throw new NotAuthException("token 信息不正确");
