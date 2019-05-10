@@ -35,4 +35,16 @@ public interface IApp_orderService extends IService<App_order> {
 	 */
 	boolean updateOrderStatus(Integer order_id, Integer status);
 
+	/**
+	 * @Description 保存订单信息
+	 * @author Jason
+	 * @date May 8, 2019
+	 * @param user_id
+	 * @param product_id
+	 * @param order
+	 * @return
+	 * @throws Exception 
+	 */
+	boolean SaveOrder(Integer user_id, Integer product_id, App_order order) throws Exception;
+
 }

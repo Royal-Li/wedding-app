@@ -39,4 +39,13 @@ public interface App_orderMapper extends BaseMapper<App_order> {
 	 */
 	boolean updateOrderStatus(@Param("order_id")Integer order_id, @Param("status")Integer status);
 
+	/**
+	 * @Description 保存订单
+	 * @author Jason
+	 * @date May 8, 2019
+	 * @param order
+	 * @return
+	 */
+	Integer SaveOrder(App_order order);
+
 }

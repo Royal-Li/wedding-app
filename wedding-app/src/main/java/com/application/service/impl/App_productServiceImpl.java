@@ -5,6 +5,7 @@ import com.application.enums.ProductType;
 import com.application.mapper.App_productMapper;
 import com.application.service.IApp_productService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import java.util.HashMap;
@@ -29,6 +30,18 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 	App_productMapper productMapper;
 	
 	@Override
+	public Map<String, Object> queryRecommendProduct() {
+		Map<String,Object> recommend = new HashMap<>();
+		List<App_product> weddingList = baseMapper.queryProductByType(ProductType.Wedding.getId());
+		List<App_product> travelList = baseMapper.queryProductByType(ProductType.Travel.getId());
+		List<App_product> hotelList = baseMapper.queryProductByType(ProductType.Hotel.getId());
+		recommend.put("wedding", weddingList);
+		recommend.put("travel", travelList);
+		recommend.put("hotel", hotelList);
+		return recommend;
+	}
+	
+	@Override
 	public List<App_product> queryProductByType(Integer type) {
 		List<App_product> list = baseMapper.queryProductByType(type);
 		return list;
@@ -45,17 +58,22 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 		List<App_product> list = baseMapper.queryProductListByDestination(id);
 		return list;
 	}
-
+	
 	@Override
-	public Map<String, Object> queryRecommendProduct() {
-		Map<String,Object> recommend = new HashMap<>();
-		List<App_product> weddingList = baseMapper.queryProductByType(ProductType.Wedding.getId());
-		List<App_product> travelList = baseMapper.queryProductByType(ProductType.Travel.getId());
-		List<App_product> hotelList = baseMapper.queryProductByType(ProductType.Hotel.getId());
-		recommend.put("wedding", weddingList);
-		recommend.put("travel", travelList);
-		recommend.put("hotel", hotelList);
-		return recommend;
+	public List<App_product> queryProductListByStore(Integer id) {
+		List<App_product> list = baseMapper.queryProductListByStore(id);
+		return list;
 	}
+
+	
+	/**
+	 * mybatis-puls 多表条件查询+分页
+	 */
+	@Override
+	public Page<Object> queryProductListBySearch(Page page, String text) {
+		
+		return page.setRecords(this.baseMapper.queryProductListBySearch(page, text));
+	}
+
 
 }

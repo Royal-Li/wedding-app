@@ -35,7 +35,7 @@ public class App_product implements Serializable {
     @TableField("numb")
     private String numb;
 
-    
+    private Integer store_id;
 
     /**
      * 目标城市 （外键）

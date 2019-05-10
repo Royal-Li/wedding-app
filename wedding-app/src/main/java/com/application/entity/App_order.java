@@ -1,6 +1,8 @@
 package com.application.entity;
 
 import java.math.BigDecimal;
+import java.util.List;
+
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -67,6 +69,19 @@ public class App_order implements Serializable {
     private String buyer_email;
     
     /**
+     * 出发城市
+     */
+    @TableField("start_city")
+    private String start_city;
+    
+    /**
+     * 出发日期
+     */
+    @TableField("start_date")
+    private String start_date;
+    
+    
+    /**
      * 订单状态 未支付 已支付 待出行  已取消
      */
     @TableField("status")
@@ -86,6 +101,9 @@ public class App_order implements Serializable {
     
     @TableField(exist=false)
     private App_user user;
+    
+    @TableField(exist=false)
+    private List<App_passenger> passengers;
 
 
 }

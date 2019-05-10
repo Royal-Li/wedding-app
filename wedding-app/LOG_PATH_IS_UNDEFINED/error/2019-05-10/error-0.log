@@ -1,0 +1,167 @@
+2019-05-10 17:44:37.355 [http-nio-8080-exec-7] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like % ? %
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+2019-05-10 17:44:53.104 [http-nio-8080-exec-6] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like % ? %
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+2019-05-10 17:45:05.700 [http-nio-8080-exec-5] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like % ? %
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+2019-05-10 17:45:46.548 [http-nio-8080-exec-3] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like % ? %
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+2019-05-10 17:46:30.268 [http-nio-8080-exec-4] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like % ? %
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% '1' %' at line 1
+2019-05-10 17:46:57.905 [http-nio-8080-exec-5] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% 'abc' %' at line 1
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like % ? %
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% 'abc' %' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% 'abc' %' at line 1
+2019-05-10 17:51:01.855 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='text', mode=IN, javaType=class java.lang.Object, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType null . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType null . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+2019-05-10 17:52:52.505 [http-nio-8080-exec-5] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%'
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 17:53:04.530 [http-nio-8080-exec-6] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%'
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 17:54:24.972 [http-nio-8080-exec-9] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%'
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 17:55:32.214 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%'
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 17:57:04.398 [http-nio-8080-exec-5] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%'
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 17:59:29.615 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%'
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:02:44.918 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:06:51.450 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Unreachable code
+
+2019-05-10 18:07:24.553 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:08:01.667 [http-nio-8080-exec-3] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:08:37.048 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:08:49.138 [http-nio-8080-exec-3] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:13:51.193 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:18:50.338 [restartedMain] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.application.mapper.App_productMapper.queryProductListBySearch] is ignored, because it exists, maybe from xml file
+2019-05-10 18:19:39.608 [http-nio-8080-exec-2] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.UnsupportedOperationException
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch
+### The error occurred while handling results
+### SQL: SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' LIMIT ?,?
+### Cause: java.lang.UnsupportedOperationException
+2019-05-10 18:20:56.663 [http-nio-8080-exec-8] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3
+2019-05-10 18:28:25.113 [http-nio-8080-exec-1] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS appStore.name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' ) TOTAL 
+
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS appStore.name, ast.img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' ) TOTAL 
+
+2019-05-10 18:29:16.302 [http-nio-8080-exec-1] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS name, img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' ) TOTAL 
+
+### The error may exist in com/application/mapper/App_productMapper.java (best guess)
+### The error may involve com.application.mapper.App_productMapper.queryProductListBySearch-Inline
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT ap.id,ap.numb,ap.title,ap.description,ap.price,app.id AS picture_id,app.img_url,app.mark,app.sort,ast.id AS store_id,ast.name AS name, img_url as store_img_url,ast.tel as store_tel FROM app_product ap, app_product_picture app,app_store ast WHERE app.product_id = ap.id AND ast.id = ap.store_id AND ap.title like '%' ? '%' ) TOTAL 
+
+2019-05-10 19:03:22.248 [http-nio-8080-exec-4] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'store_id' of 'class com.application.entity.App_product' with value '1' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'store_id' in 'class com.application.entity.App_product'
+2019-05-10 19:03:35.727 [http-nio-8080-exec-3] ERROR com.application.exception.ExceptionControllerAdvice - 出错了 捕捉到异常:  nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'store_id' of 'class com.application.entity.App_product' with value '1' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'store_id' in 'class com.application.entity.App_product'

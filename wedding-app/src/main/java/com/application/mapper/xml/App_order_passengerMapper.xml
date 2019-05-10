@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.application.mapper.App_order_passengerMapper">
+	<resultMap id="BaseResultMap" type="com.application.entity.App_order_passenger">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="order_id" jdbcType="INTEGER" property="order_id" />
+		<result column="passenger_id" jdbcType="INTEGER" property="passenger_id" />
+	</resultMap>
+	<!-- s保存订单乘客 -->
+  <insert id="saveOrderPassenger">
+  	insert into app_order_passenger
+	  	(
+	  		order_id,
+	  		passenger_id
+	  	) 
+	  	values
+  	<foreach collection="passengerIds" item="passenger_id" index="index" separator="," >
+		(
+			#{order_id,jdbcType=INTEGER}, 
+			#{passenger_id,jdbcType=INTEGER}
+		)
+	</foreach>
+  </insert>
+	
+	
+</mapper>

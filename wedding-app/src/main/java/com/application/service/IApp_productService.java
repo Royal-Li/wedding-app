@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.application.entity.App_product;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -16,6 +17,14 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IApp_productService extends IService<App_product> {
 
+	/**
+	 * @Description 获取首页推荐商品
+	 * @author Jason
+	 * @date May 5, 2019
+	 * @return
+	 */
+	Map<String, Object> queryRecommendProduct();
+	
 	/**
 	 * @Description 根据类型查找product
 	 * @author Jason
@@ -43,13 +52,28 @@ public interface IApp_productService extends IService<App_product> {
 	 */
 	List<App_product> queryProductListByDestination(Integer id);
 
+	
+	
 	/**
-	 * @Description 获取首页推荐商品
+	 * @Description 根据商店查询商品列表
 	 * @author Jason
-	 * @date May 5, 2019
+	 * @date May 6, 2019
+	 * @param id
 	 * @return
 	 */
-	Map<String, Object> queryRecommendProduct();
+	List<App_product> queryProductListByStore(Integer id);
+
+	
+	/**
+	 * @Description 根据search 查询商品
+	 * @author Jason
+	 * @date 2019年5月10日
+	 * @param page
+	 * @param text
+	 * @return
+	 */
+	Page<Object> queryProductListBySearch(Page page, String text);
+
 
 	
 

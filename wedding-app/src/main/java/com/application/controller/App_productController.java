@@ -10,6 +10,7 @@ import com.application.entity.App_product;
 import com.application.response.StatusResult;
 import com.application.service.IApp_productService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import java.util.List;
 import java.util.Map;
@@ -82,7 +83,7 @@ public class App_productController {
 	}
 	
 	/**
-	 * @Description
+	 * @Description 根据目的地查找商品
 	 * @author Jason
 	 * @date May 5, 2019
 	 * @param id
@@ -94,6 +95,31 @@ public class App_productController {
 		List<App_product> list = productService.queryProductListByDestination(id);
 		return StatusResult.ok(list);
 		
+	}
+	
+	/**
+	 * @Description 根据店铺查找商品
+	 * @author Jason
+	 * @date 2019年5月10日
+	 * @param id
+	 * @param currentPage
+	 * @param pageSize
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value="/store/{id}", method=RequestMethod.GET)
+	public StatusResult getProductListByStore(@PathVariable Integer id, Integer currentPage, Integer pageSize) {
+		
+		List<App_product> list = productService.queryProductListByStore(id);
+		return StatusResult.ok(list);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/search/{text}", method=RequestMethod.GET)
+	public StatusResult getProductListBySearch(@PathVariable String text, Integer currentPage, Integer pageSize) {
+		
+		Page<Object> page = productService.queryProductListBySearch(new Page<>(currentPage, pageSize), text);
+		return StatusResult.ok(page);
 	}
 	
 }
