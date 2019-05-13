@@ -4,6 +4,7 @@ package com.application.controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.application.entity.App_product;
@@ -114,9 +115,18 @@ public class App_productController {
 		return StatusResult.ok(list);
 	}
 	
+	/**
+	 * @Description search 搜索商品
+	 * @author Jason
+	 * @date 2019年5月13日
+	 * @param text
+	 * @param currentPage
+	 * @param pageSize
+	 * @return
+	 */
 	@ResponseBody
 	@RequestMapping(value="/search/{text}", method=RequestMethod.GET)
-	public StatusResult getProductListBySearch(@PathVariable String text, Integer currentPage, Integer pageSize) {
+	public StatusResult getProductListBySearch(@PathVariable String text, @RequestParam(defaultValue="1")Integer currentPage, @RequestParam(defaultValue="10")Integer pageSize) {
 		
 		Page<Object> page = productService.queryProductListBySearch(new Page<>(currentPage, pageSize), text);
 		return StatusResult.ok(page);

@@ -19,6 +19,7 @@
 		where au.id = #{user_id,jdbcType=INTEGER}
 	</select>
 
+	<!-- s查询状态不等于7(删除)的订单 -->
 	<select id="getOrderListByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap2">
 		SELECT ao.* 
 		FROM app_order ao 
@@ -27,6 +28,7 @@
 		<if test="type != null">
 			and ao.status =#{type,jdbcType=INTEGER}
 		</if>
+		and ao.status &lt;&gt; 7
 	</select>
 	<!-- s修改订单状态 -->
 	<update id="updateOrderStatus">

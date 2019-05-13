@@ -137,9 +137,12 @@
 
 	<select id="queryProductListBySearch" resultMap="BaseResultMap2">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id
 		FROM
 		app_product ap
-		WHERE ap.title like "%" #{text,jdbcType=VARCHAR} "%"
+		<if test="text!=null and text!=''">
+		WHERE concat_ws(',',ap.title,ap.description) like "%" #{text,jdbcType=VARCHAR} "%"
+		</if>
+		
 	</select>
 </mapper>

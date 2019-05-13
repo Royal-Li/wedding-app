@@ -39,7 +39,7 @@ public interface App_productMapper extends BaseMapper<App_product> {
 			+ " app.product_id = ap.id" 
 			+ " AND ast.id = ap.store_id" 
 			+ " AND ap.title like '%' #{text} '%'")*/
-	List<App_product> queryProductListBySearch(Page page,@Param("text") String text);
+	List<App_product> queryProductListBySearch(Page page, @Param("text")String text);
 
 
 }

@@ -1946,3 +1946,22 @@ Unconditional classes:
 2019-05-10 19:11:11.438 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2019-05-10 19:11:25.881 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2019-05-10 19:11:25.886 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2019-05-10 19:11:26.174 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 13916 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-05-10 19:11:26.174 [INFO ] com.application.Application - The following profiles are active: test
+2019-05-10 19:11:26.442 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-05-10 19:11:26.443 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-10 19:11:26.443 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-10 19:11:26.443 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-10 19:11:26.471 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-05-10 19:11:26.471 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 295 ms
+2019-05-10 19:11:26.528 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2019-05-10 19:11:26.820 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-10 19:11:26.931 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-05-10 19:11:26.945 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-05-10 19:11:26.948 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-05-10 19:11:26.949 [INFO ] com.application.Application - Started Application in 0.812 seconds (JVM running for 316.525)
+2019-05-10 19:11:26.951 [INFO ] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-05-10 19:11:54.159 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-10 19:11:54.160 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-10 19:11:54.176 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2019-05-10 19:11:54.183 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
