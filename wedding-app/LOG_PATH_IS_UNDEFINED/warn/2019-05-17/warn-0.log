@@ -1,0 +1,22 @@
+2019-05-17 11:45:56.153 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_areaMapper' and 'com.application.mapper.App_areaMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.154 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_orderMapper' and 'com.application.mapper.App_orderMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.154 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_order_passengerMapper' and 'com.application.mapper.App_order_passengerMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.155 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_passengerMapper' and 'com.application.mapper.App_passengerMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.155 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_pictureMapper' and 'com.application.mapper.App_pictureMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.155 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_productMapper' and 'com.application.mapper.App_productMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.155 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_product_pictureMapper' and 'com.application.mapper.App_product_pictureMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.155 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_storeMapper' and 'com.application.mapper.App_storeMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.155 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				Skipping MapperFactoryBean with name 'app_userMapper' and 'com.application.mapper.App_userMapper' mapperInterface. Bean already defined with the same name!
+2019-05-17 11:45:56.156 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+				No MyBatis mapper was found in '[com.application.mapper]' package. Please check your configuration.
+2019-05-17 11:46:00.064 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer -
+				Unable to start LiveReload server

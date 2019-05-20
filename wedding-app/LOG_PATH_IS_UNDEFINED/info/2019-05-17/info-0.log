@@ -1,0 +1,33 @@
+2019-05-17 11:45:54.115 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 236 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-05-17 11:45:54.119 [INFO ] com.application.Application - The following profiles are active: test
+2019-05-17 11:45:54.202 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-17 11:45:54.202 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-17 11:45:57.494 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-05-17 11:45:57.524 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-05-17 11:45:57.537 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-17 11:45:57.537 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-17 11:45:57.564 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-05-17 11:45:57.742 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-05-17 11:45:57.742 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3539 ms
+2019-05-17 11:45:58.222 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-17 11:45:59.730 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-17 11:46:00.097 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-05-17 11:46:00.156 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/wedding-app'
+2019-05-17 11:46:00.163 [INFO ] com.application.Application - Started Application in 6.544 seconds (JVM running for 9.018)
+2019-05-17 11:46:04.602 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-17 11:46:04.602 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-17 11:46:04.609 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-05-17 11:46:04.660 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-17 11:46:04.662 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-17 11:46:11.370 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:34:30.505 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-17 13:34:30.569 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-17 13:34:34.803 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:35:54.944 [INFO ] org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1553567003; UM_distinctid=169c3b6eef1843-0796f27fab9f54-5701631-1fa400-169c3b6eef2fa; CNZZDATA1256912241=484211180-1553764090-%7C1553825635; JSESSIONID=33135632C9E89C8AAED86FD3233D1B21] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-05-17 13:36:21.039 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:37:19.777 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:38:55.699 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:39:14.280 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:40:07.340 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-17 13:40:22.729 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}

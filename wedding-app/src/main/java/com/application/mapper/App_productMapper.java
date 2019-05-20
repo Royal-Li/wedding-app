@@ -22,13 +22,13 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 public interface App_productMapper extends BaseMapper<App_product> {
 
 	
-	List<App_product> queryProductByType(@Param("type")Integer type);
+	List<App_product> queryProductByType(@Param("type")Integer type, @Param("page")Page<App_product> page);
 
 	App_product queryProductDetail(@Param("product_id") Integer product_id);
 
-	List<App_product> queryProductListByDestination(@Param("target_city")Integer id);
+	List<App_product> queryProductListByDestination(@Param("page")Page page, @Param("target_city")Integer id);
 
-	List<App_product> queryProductListByStore(@Param("store_id")Integer id);
+	List<App_product> queryProductListByStore(@Param("page")Page page, @Param("store_id")Integer id);
 
 	
 	/*@Select("SELECT"
@@ -39,7 +39,7 @@ public interface App_productMapper extends BaseMapper<App_product> {
 			+ " app.product_id = ap.id" 
 			+ " AND ast.id = ap.store_id" 
 			+ " AND ap.title like '%' #{text} '%'")*/
-	List<App_product> queryProductListBySearch(Page page, @Param("text")String text);
+	List<App_product> queryProductListBySearch(@Param("page")Page page, @Param("text")String text);
 
 
 }

@@ -49,7 +49,7 @@ public class App_areaController {
 		logger.info("后台 /area");
 		
 		QueryWrapper<App_area> query = new QueryWrapper<App_area>();
-		query.isNull("parent_id").eq("status", 1);
+		query.eq("parent_id", 0).eq("status", 1);
 		List<App_area> list = areaService.list(query);
 		return StatusResult.ok(list);
 	}

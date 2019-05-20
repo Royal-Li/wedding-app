@@ -2,6 +2,7 @@ package com.application.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -35,7 +36,7 @@ public class App_storeController {
 	IApp_storeService storeService;
 	
 	@ResponseBody
-	@RequestMapping(value="/store")
+	@RequestMapping(value="/store", method=RequestMethod.GET)
 	public StatusResult getStore(@RequestParam(defaultValue="1")Integer currentPage, @RequestParam(defaultValue="10")Integer pageSize) {
 		Page<App_store> page =new Page<>(currentPage, pageSize);
 		IPage<App_store> store = storeService.page(page);

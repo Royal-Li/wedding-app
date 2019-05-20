@@ -61,10 +61,10 @@ public class App_productController {
 	 */
 	@ResponseBody
 	@RequestMapping(value="/product/list/{type}", method=RequestMethod.GET)
-	public StatusResult getProductListByType(@PathVariable Integer type) {
+	public StatusResult getProductListByType(@PathVariable Integer type, @RequestParam(defaultValue="1")Integer currentPage, @RequestParam(defaultValue="10")Integer pageSize) {
 		
 		logger.info("后台 /product/list/{type}");
-		List<App_product> list = productService.queryProductByType(type);
+		List<App_product> list = productService.queryProductByType(type, currentPage, pageSize);
 		return StatusResult.ok(list);
 	}
 	
@@ -92,9 +92,9 @@ public class App_productController {
 	 */
 	@ResponseBody
 	@RequestMapping(value="/destination/{id}",method=RequestMethod.GET)
-	public StatusResult getProductListByDestination(@PathVariable Integer id) {
-		List<App_product> list = productService.queryProductListByDestination(id);
-		return StatusResult.ok(list);
+	public StatusResult getProductListByDestination(@PathVariable Integer id, @RequestParam(defaultValue="1")Integer currentPage, @RequestParam(defaultValue="10")Integer pageSize) {
+		Page<Object> page = productService.queryProductListByDestination(new Page<>(currentPage, pageSize), id);
+		return StatusResult.ok(page);
 		
 	}
 	
@@ -109,10 +109,10 @@ public class App_productController {
 	 */
 	@ResponseBody
 	@RequestMapping(value="/store/{id}", method=RequestMethod.GET)
-	public StatusResult getProductListByStore(@PathVariable Integer id, Integer currentPage, Integer pageSize) {
+	public StatusResult getProductListByStore(@PathVariable Integer id, @RequestParam(defaultValue="1")Integer currentPage, @RequestParam(defaultValue="10")Integer pageSize) {
 		
-		List<App_product> list = productService.queryProductListByStore(id);
-		return StatusResult.ok(list);
+		Page<Object> page = productService.queryProductListByStore(new Page<>(currentPage, pageSize), id);
+		return StatusResult.ok(page);
 	}
 	
 	/**

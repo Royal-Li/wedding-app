@@ -1,0 +1,64 @@
+2019-05-14 17:51:36.891 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 13328 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-05-14 17:51:36.894 [INFO ] com.application.Application - The following profiles are active: test
+2019-05-14 17:51:36.977 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-14 17:51:36.978 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-14 17:51:39.939 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-05-14 17:51:39.958 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:51:39.967 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-14 17:51:39.968 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-14 17:51:40.006 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-05-14 17:51:40.124 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-05-14 17:51:40.125 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3146 ms
+2019-05-14 17:51:40.699 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-14 17:51:46.757 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-14 17:51:50.120 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:51:50.137 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:51:50.138 [INFO ] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-05-14 17:51:50.185 [INFO ] org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-05-14 17:51:50.186 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:51:50.186 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:51:50.240 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-05-14 17:51:50.246 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-14 17:51:50.250 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-05-14 17:52:01.784 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 7128 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-05-14 17:52:01.788 [INFO ] com.application.Application - The following profiles are active: test
+2019-05-14 17:52:01.835 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-14 17:52:01.835 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-14 17:52:03.313 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-05-14 17:52:03.326 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:52:03.336 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-14 17:52:03.337 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-14 17:52:03.347 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-05-14 17:52:03.435 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-05-14 17:52:03.435 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1600 ms
+2019-05-14 17:52:03.793 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-14 17:52:04.662 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-14 17:52:04.946 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-05-14 17:52:04.978 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-05-14 17:52:05.001 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/wedding-app'
+2019-05-14 17:52:05.005 [INFO ] com.application.Application - Started Application in 3.542 seconds (JVM running for 4.1)
+2019-05-14 17:52:07.685 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-14 17:52:07.685 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-14 17:52:07.696 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2019-05-14 17:52:07.761 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-14 17:52:07.760 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-14 17:52:15.129 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:21.249 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:22.786 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:23.381 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:24.451 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:25.250 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:26.168 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:26.678 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:27.157 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:28.366 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:29.359 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:30.120 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:31.149 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:32.183 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:33.148 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:33.667 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-14 17:52:46.565 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-14 17:52:50.255 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}

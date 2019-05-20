@@ -32,9 +32,10 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 	@Override
 	public Map<String, Object> queryRecommendProduct() {
 		Map<String,Object> recommend = new HashMap<>();
-		List<App_product> weddingList = baseMapper.queryProductByType(ProductType.Wedding.getId());
-		List<App_product> travelList = baseMapper.queryProductByType(ProductType.Travel.getId());
-		List<App_product> hotelList = baseMapper.queryProductByType(ProductType.Hotel.getId());
+		Page<App_product> page = new Page<>(1, 10);
+		List<App_product> weddingList = baseMapper.queryProductByType(ProductType.Wedding.getId(), page);
+		List<App_product> travelList = baseMapper.queryProductByType(ProductType.Travel.getId(), page);
+		List<App_product> hotelList = baseMapper.queryProductByType(ProductType.Hotel.getId(), page);
 		recommend.put("wedding", weddingList);
 		recommend.put("travel", travelList);
 		recommend.put("hotel", hotelList);
@@ -42,8 +43,9 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 	}
 	
 	@Override
-	public List<App_product> queryProductByType(Integer type) {
-		List<App_product> list = baseMapper.queryProductByType(type);
+	public List<App_product> queryProductByType(Integer type, Integer currentPage, Integer pageSize) {
+		Page<App_product> page = new Page<>(currentPage, pageSize);
+		List<App_product> list = baseMapper.queryProductByType(type, page);
 		return list;
 	}
 
@@ -54,15 +56,13 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 	}
 
 	@Override
-	public List<App_product> queryProductListByDestination(Integer id) {
-		List<App_product> list = baseMapper.queryProductListByDestination(id);
-		return list;
+	public Page<Object> queryProductListByDestination(Page page, Integer id) {
+		return page.setRecords(this.baseMapper.queryProductListByDestination(page, id));
 	}
 	
 	@Override
-	public List<App_product> queryProductListByStore(Integer id) {
-		List<App_product> list = baseMapper.queryProductListByStore(id);
-		return list;
+	public Page<Object> queryProductListByStore(Page page, Integer id) {
+		return page.setRecords(this.baseMapper.queryProductListByStore(page, id));
 	}
 
 	
@@ -71,7 +71,6 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 	 */
 	@Override
 	public Page<Object> queryProductListBySearch(Page page, String text) {
-		
 		return page.setRecords(this.baseMapper.queryProductListBySearch(page, text));
 	}
 

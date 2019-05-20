@@ -30,9 +30,11 @@ public interface IApp_productService extends IService<App_product> {
 	 * @author Jason
 	 * @date Apr 19, 2019
 	 * @param type
+	 * @param pageSize 
+	 * @param currentPage 
 	 * @return
 	 */
-	List<App_product> queryProductByType(Integer type);
+	List<App_product> queryProductByType(Integer type, Integer currentPage, Integer pageSize);
 
 	/**
 	 * @Description 根据商品id 查询商品详细信息
@@ -50,7 +52,7 @@ public interface IApp_productService extends IService<App_product> {
 	 * @param id
 	 * @return
 	 */
-	List<App_product> queryProductListByDestination(Integer id);
+	Page<Object> queryProductListByDestination(Page page, Integer id);
 
 	
 	
@@ -61,7 +63,7 @@ public interface IApp_productService extends IService<App_product> {
 	 * @param id
 	 * @return
 	 */
-	List<App_product> queryProductListByStore(Integer id);
+	Page<Object> queryProductListByStore(Page page, Integer id);
 
 	
 	/**

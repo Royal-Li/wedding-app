@@ -59,23 +59,14 @@
 	
 	<!-- s根据类型查找商品 -->
 	<select id="queryProductByType"
-		parameterType="java.lang.Integer" resultMap="BaseResultMap1">
+		parameterType="java.lang.Integer" resultMap="BaseResultMap2">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price,
-		app.id AS
-		picture_id,app.img_url,app.mark,app.sort,
-		ast.id AS store_id,ast.name
-		AS store_name, ast.img_url as store_img_url,
-		ast.tel as store_tel
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id
 		FROM
-		app_product ap,
-		app_product_picture app,
-		app_store ast
+		app_product ap
 		WHERE
-		app.product_id = ap.id
-		AND ast.id = ap.store_id
-		AND ap.type =
-		#{type,jdbcType=INTEGER}
+		ap.type = #{type,jdbcType=INTEGER}
+		and ap.status = 1
 	</select>
 	<!-- s根据id 查找商品详情 -->
 	<select id="queryProductDetail"
@@ -100,7 +91,7 @@
 	<select id="queryProductListByDestination"
 		parameterType="java.lang.Integer" resultMap="BaseResultMap1">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price,
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id,
 		app.id AS
 		picture_id,app.img_url,app.mark,app.sort,
 		ast.id AS store_id,ast.name
@@ -115,12 +106,13 @@
 		ON app.product_id = ap.id
 		WHERE ap.target_city =
 		#{target_city,jdbcType=INTEGER}
+		and ap.status = 1
 	</select>
 	<!-- s根据商店查找商品 -->
 	<select id="queryProductListByStore"
 		parameterType="java.lang.Integer" resultMap="BaseResultMap1">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price,
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id,
 		app.id AS
 		picture_id,app.img_url,app.mark,app.sort,
 		ast.id AS store_id,ast.name
@@ -133,6 +125,7 @@
 		app_product_picture app ON app.product_id = ap.id
 		WHERE ap.store_id =
 		#{store_id,jdbcType=INTEGER}
+		and ap.status = 1
 	</select>
 
 	<select id="queryProductListBySearch" resultMap="BaseResultMap2">
@@ -141,7 +134,8 @@
 		FROM
 		app_product ap
 		<if test="text!=null and text!=''">
-		WHERE concat_ws(',',ap.title,ap.description) like "%" #{text,jdbcType=VARCHAR} "%"
+		WHERE concat_ws(',',ap.title,ap.description) like "%" #{text,jdbcType=VARCHAR} "%" 
+		and ap.status = 1
 		</if>
 		
 	</select>
