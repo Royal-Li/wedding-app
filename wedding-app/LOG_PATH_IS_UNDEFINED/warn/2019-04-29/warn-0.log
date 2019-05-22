@@ -1,4 +1,0 @@
-2019-04-29 10:18:59.408 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -
-				Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2019-04-29 15:58:40.260 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -
-				Resolved [com.application.exception.NotAuthException: 没有token认证信息]
