@@ -19,6 +19,7 @@
 		where au.id = #{user_id,jdbcType=INTEGER}
 	</select>
 
+	<!-- s查询状态不等于7(删除)的订单 -->
 	<select id="getOrderListByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap2">
 		SELECT ao.* 
 		FROM app_order ao 
@@ -27,6 +28,7 @@
 		<if test="type != null">
 			and ao.status =#{type,jdbcType=INTEGER}
 		</if>
+		and ao.status &lt;&gt; 7
 	</select>
 	<!-- s修改订单状态 -->
 	<update id="updateOrderStatus">
@@ -34,5 +36,83 @@
 		SET `status` = #{status,jdbcType=INTEGER} 
 		WHERE id = #{order_id,jdbcType=INTEGER}
 	</update>
+	<!-- s保存订单返回主键 -->
+	<insert id="SaveOrder" parameterType="com.application.entity.App_order" keyProperty="id" useGeneratedKeys="true">
+		insert into app_order
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			status, create_time,
+			<if test="id != null">
+				id,
+			</if>
+			<if test="order_num != null">
+				order_num,
+			</if>
+			<if test="user_id != null">
+				user_id,
+			</if>
+			<if test="product_id != null">
+				product_id,
+			</if>
+			<if test="buyer_name != null">
+				buyer_name,
+			</if>
+			<if test="buyer_mobile != null">
+				buyer_mobile,
+			</if>
+			<if test="buyer_email != null">
+				buyer_email,
+			</if>
+			<if test="price != null">
+				price,
+			</if>
+			<if test="start_city != null">
+				start_city,
+			</if>
+			<if test="start_date != null">
+				start_date,
+			</if>
+			
+			<if test="update_time != null">
+				update_time,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			1, NOW(),
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="order_num != null">
+				#{order_num,jdbcType=VARCHAR},
+			</if>
+			<if test="user_id != null">
+				#{user_id,jdbcType=INTEGER},
+			</if>
+			<if test="product_id != null">
+				#{product_id,jdbcType=INTEGER},
+			</if>
+			<if test="buyer_name != null">
+				#{buyer_name,jdbcType=VARCHAR},
+			</if>
+			<if test="buyer_mobile != null">
+				#{buyer_mobile,jdbcType=VARCHAR},
+			</if>
+			<if test="buyer_email != null">
+				#{buyer_email,jdbcType=VARCHAR},
+			</if>
+			<if test="price != null">
+				#{price,jdbcType=DOUBLE},
+			</if>
+			<if test="start_city != null">
+				#{start_city,jdbcType=VARCHAR},
+			</if>
+			<if test="start_date != null">
+				#{start_date,jdbcType=INTEGER},
+			</if>
+			<if test="update_time != null">
+				#{update_time,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+
 
 </mapper>

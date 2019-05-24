@@ -4,6 +4,7 @@
 	<resultMap id="BaseResultMap"
 		type="com.application.entity.App_product">
 		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="store_id" jdbcType="INTEGER" property="store_id" />
 		<result column="numb" jdbcType="VARCHAR" property="numb" />
 		<result column="target_city" jdbcType="INTEGER"
 			property="target_city" />
@@ -21,45 +22,61 @@
 		<result column="price_detial" jdbcType="VARCHAR"
 			property="price_detial" />
 		<result column="type" jdbcType="INTEGER" property="type" />
-		<association property="appStore"
-			javaType="com.application.entity.App_store">
+	</resultMap>
+
+	
+	<!-- s返回值为此map时 需要连表查询才能把关联数据查出来 然后根据配置映射    这样查到的是多条信息假如10条 可能映射进实体之后 就变成两条 （分页总数不同）-->
+	<resultMap id="BaseResultMap1" type="com.application.entity.App_product" extends="BaseResultMap">
+		<association property="appStore" javaType="com.application.entity.App_store">
 			<id column="store_id" property="id" />
 			<result column="store_name" property="name" />
 			<result column="store_img_url" property="img_url" />
 			<result column="store_tel" property="tel" />
 		</association>
-		<collection property="pictureList"
-			ofType="com.application.entity.App_product_picture">
+		<collection property="pictureList" ofType="com.application.entity.App_product_picture">
 			<id column="picture_id" property="id" />
 			<result column="img_url" property="img_url" />
 			<result column="mark" property="mark" />
 			<result column="sort" property="sort" />
 		</collection>
 	</resultMap>
+
+	<!-- s返回值为此map 时 只需查询当前一个表 剩下的 交给collection 或者 association的select语句   查出来几条就是几条（分页总数相同）-->
+	<resultMap id="BaseResultMap2" type="com.application.entity.App_product" extends="BaseResultMap">
+		<association property="appStore" javaType="com.application.entity.App_store" column="store_id" select="queryStore"></association>
+		<collection property="pictureList" ofType="com.application.entity.App_product_picture" column="id" select="queryPictures"></collection>
+	</resultMap>
+	
+	<!-- s自动查询store信息 -->
+	<select id="queryStore" resultType="com.application.entity.App_store">
+		select * from app_store where id = #{store_id}
+	</select>
+	
+	<!-- s自动查询product_picture信息 -->
+	<select id="queryPictures" resultType="com.application.entity.App_product_picture">
+		select * from app_product_picture where product_id = #{id}
+	</select>
+	
 	<!-- s根据类型查找商品 -->
 	<select id="queryProductByType"
-		parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		parameterType="java.lang.Integer" resultMap="BaseResultMap2">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price,
-		app.id AS picture_id,app.img_url,app.mark,app.sort,
-		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,
-		ast.tel as store_tel
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id
 		FROM
-		app_product ap,
-		app_product_picture app,
-		app_store ast
+		app_product ap
 		WHERE
-		app.product_id = ap.id
-		AND ast.id = ap.store_id
-		AND ap.type = #{type,jdbcType=INTEGER}
+		ap.type = #{type,jdbcType=INTEGER}
+		and ap.status = 1
 	</select>
 	<!-- s根据id 查找商品详情 -->
 	<select id="queryProductDetail"
-		parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		parameterType="java.lang.Integer" resultMap="BaseResultMap1">
 		SELECT
 		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.product_detail_text,ap.example_img,ap.config,ap.price_detial,ap.type,ap.start_city,
 		app.id AS picture_id,app.img_url,app.mark,app.sort,
-		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url, ast.tel as store_tel
+		ast.id AS
+		store_id,ast.name AS store_name, ast.img_url as store_img_url, ast.tel
+		as store_tel
 		FROM
 		app_product ap,
 		app_product_picture app,
@@ -72,30 +89,54 @@
 	</select>
 	<!-- s根据目的地查找商品列表 -->
 	<select id="queryProductListByDestination"
-		parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		parameterType="java.lang.Integer" resultMap="BaseResultMap1">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price,
-		app.id AS picture_id,app.img_url,app.mark,app.sort,
-		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id,
+		app.id AS
+		picture_id,app.img_url,app.mark,app.sort,
+		ast.id AS store_id,ast.name
+		AS store_name, ast.img_url as store_img_url,
 		ast.tel as store_tel
 		FROM
 		app_product ap
 		LEFT JOIN app_store ast ON ap.store_id = ast.id
-		LEFT JOIN app_area aa ON ap.target_city = aa.id
-		LEFT JOIN app_product_picture app ON app.product_id = ap.id
-		WHERE ap.target_city = #{target_city,jdbcType=INTEGER}
+		LEFT JOIN
+		app_area aa ON ap.target_city = aa.id
+		LEFT JOIN app_product_picture app
+		ON app.product_id = ap.id
+		WHERE ap.target_city =
+		#{target_city,jdbcType=INTEGER}
+		and ap.status = 1
 	</select>
 	<!-- s根据商店查找商品 -->
-	<select id="queryProductListByStore" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+	<select id="queryProductListByStore"
+		parameterType="java.lang.Integer" resultMap="BaseResultMap1">
 		SELECT
-		ap.id,ap.numb,ap.title,ap.description,ap.price,
-		app.id AS picture_id,app.img_url,app.mark,app.sort,
-		ast.id AS store_id,ast.name AS store_name, ast.img_url as store_img_url,
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id,
+		app.id AS
+		picture_id,app.img_url,app.mark,app.sort,
+		ast.id AS store_id,ast.name
+		AS store_name, ast.img_url as store_img_url,
 		ast.tel as store_tel
 		FROM
 		app_product ap
 		LEFT JOIN app_store ast ON ap.store_id = ast.id
-		LEFT JOIN app_product_picture app ON app.product_id = ap.id
-		WHERE ap.store_id = #{store_id,jdbcType=INTEGER}
+		LEFT JOIN
+		app_product_picture app ON app.product_id = ap.id
+		WHERE ap.store_id =
+		#{store_id,jdbcType=INTEGER}
+		and ap.status = 1
+	</select>
+
+	<select id="queryProductListBySearch" resultMap="BaseResultMap2">
+		SELECT
+		ap.id,ap.numb,ap.title,ap.description,ap.price,ap.store_id
+		FROM
+		app_product ap
+		<if test="text!=null and text!=''">
+		WHERE concat_ws(',',ap.title,ap.description) like "%" #{text,jdbcType=VARCHAR} "%" 
+		and ap.status = 1
+		</if>
+		
 	</select>
 </mapper>

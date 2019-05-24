@@ -12,8 +12,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 /**
  * <p>
@@ -52,6 +57,12 @@ public class App_productServiceImpl extends ServiceImpl<App_productMapper, App_p
 	@Override
 	public App_product queryProductDetail(Integer product_id) {
 		App_product product = productMapper.queryProductDetail(product_id);
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+		System.out.println(request.getServerName()+"---"+request.getServerPort()+"--"+request.getContextPath());
+		if(!StringUtils.isEmpty(product.getProduct_detail_text())) {
+			String replace = product.getProduct_detail_text().replace("guns", "wedding-app");
+			product.setProduct_detail_text(replace);
+		}
 		return product;
 	}
 

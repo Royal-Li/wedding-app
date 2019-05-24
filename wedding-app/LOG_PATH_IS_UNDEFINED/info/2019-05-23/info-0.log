@@ -1,0 +1,236 @@
+2019-05-23 15:28:07.092 [INFO ] com.application.Application - Starting Application on DESKTOP-7RKQL44 with PID 12032 (E:\git\wedding\wedding-app\wedding-app\target\classes started by qs016 in E:\git\wedding\wedding-app\wedding-app)
+2019-05-23 15:28:07.094 [INFO ] com.application.Application - The following profiles are active: test
+2019-05-23 15:28:07.219 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-23 15:28:07.219 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-23 15:28:14.638 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-05-23 15:28:14.660 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-05-23 15:28:14.684 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-23 15:28:14.684 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-23 15:28:14.703 [INFO ] org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\01develop\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/01develop/Java/jre1.8.0_181/bin/server;D:/01develop/Java/jre1.8.0_181/bin;D:/01develop/Java/jre1.8.0_181/lib/amd64;D:\03work\Xftp\;D:\03work\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"D:\01develop\Java\jdk1.8.0_181\bin;D:\01develop\Java\jdk1.8.0_181\jre\bin";D:\01develop\mysql-8.0.12-winx64\bin;D:\01develop\maven\apache-maven-3.5.4\bin;D:\01develop\TortoiseGit\bin;D:\01develop\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\qs016\AppData\Local\Microsoft\WindowsApps;D:\01develop\eclipse\jee-2018-09\eclipse;;.]
+2019-05-23 15:28:14.925 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring embedded WebApplicationContext
+2019-05-23 15:28:14.927 [INFO ] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7707 ms
+2019-05-23 15:28:15.563 [INFO ] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-23 15:28:16.831 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 15:28:17.416 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-05-23 15:28:17.444 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/wedding-app'
+2019-05-23 15:28:17.448 [INFO ] com.application.Application - Started Application in 11.356 seconds (JVM running for 12.365)
+2019-05-23 15:28:24.253 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/wedding-app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 15:28:24.253 [INFO ] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-23 15:28:24.265 [INFO ] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-05-23 15:28:24.326 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:28:24.330 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:41:42.526 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:41:44.756 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:41:47.611 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:41:48.605 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:41:51.394 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:42:09.601 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:47:11.600 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:47:11.664 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:47:30.093 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:49:16.998 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:49:17.060 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:49:23.133 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:49:41.458 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:49:57.047 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 15:50:01.113 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:52:09.832 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:52:09.893 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:52:41.641 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:52:41.704 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:53:13.462 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:53:13.536 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:53:14.468 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:53:14.543 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:54:10.566 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:54:10.630 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:54:58.490 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:54:58.557 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:56:16.090 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:56:16.156 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:56:30.958 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:56:31.021 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:56:41.785 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:56:56.110 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:56:57.545 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:56:58.146 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:56:58.548 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:56:58.936 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:56:59.247 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:57:10.880 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:57:12.827 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:57:13.564 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:57:14.578 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:57:14.612 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:58:43.341 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:58:43.403 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:59:10.092 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 15:59:12.771 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:59:14.916 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:59:19.306 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 15:59:19.373 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 15:59:22.982 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:59:25.094 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:59:27.848 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 15:59:53.427 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:27.690 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:00:27.756 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:00:31.464 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:33.431 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:34.650 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:36.290 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:37.639 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:41.163 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:42.041 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:43.063 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:43.128 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:45.208 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:00:46.375 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:01:17.610 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:02:11.237 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:02:11.302 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:02:14.986 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:02:44.451 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 16:02:46.145 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:04:22.190 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:04:22.258 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:04:25.773 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:04:45.901 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:04:45.965 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:04:49.651 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:05:01.921 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:05:01.983 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:05:08.411 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:05:38.622 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 16:13:40.514 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:13:40.580 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:14:13.758 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:14:15.397 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:14:32.129 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:14:36.646 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:14:40.625 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:14:42.451 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:14:45.449 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:14:47.430 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:14:48.730 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:15:09.800 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 16:15:22.521 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:15:22.608 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:16:45.686 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:16:45.744 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:16:49.721 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:16:50.868 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:16:58.509 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 16:17:04.754 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:17:04.760 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:17:14.277 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:17:14.282 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:17:40.541 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:17:57.118 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:17:57.130 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:18:29.365 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:18:29.429 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:18:40.179 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 16:18:42.068 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:18:42.078 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:19:05.010 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:19:05.079 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:19:17.132 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 16:19:18.554 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:19:18.566 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:19:30.390 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:19:41.803 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:20:07.171 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:20:09.871 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:21:13.447 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:21:13.454 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 16:21:19.102 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:21:22.628 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 16:21:40.332 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:21:40.398 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:25:11.988 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 16:25:12.059 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 16:25:17.883 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 16:28:16.557 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 16:30:08.380 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 16:30:10.239 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 16:32:24.172 [INFO ] com.application.controller.App_areaController - 后台 /area/{parent_id}
+2019-05-23 17:06:37.510 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 17:06:37.583 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 17:08:17.383 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 17:08:18.881 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:08:38.693 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:08:38.915 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:08:42.252 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:08:54.105 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:08:58.911 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:08:59.086 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:09:01.688 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:09:08.027 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 17:09:42.646 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:09:44.056 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:12:29.901 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:12:31.099 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:12:32.104 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:12:32.513 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:12:33.016 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:12:33.538 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:14:00.774 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:14:02.361 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:14:04.348 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:20:26.722 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:20:28.016 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 17:21:03.077 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 17:21:03.145 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 17:21:07.485 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:21:08.663 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 17:22:18.375 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 17:22:18.458 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 17:22:22.252 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:22:23.366 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 17:28:44.198 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 17:29:15.433 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:29:16.540 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 17:29:57.652 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:29:57.657 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 17:33:43.891 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:33:43.897 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 17:34:13.561 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 17:34:13.644 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 17:34:31.430 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 17:34:31.494 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 17:34:36.096 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:34:37.580 [INFO ] com.application.controller.App_areaController - 后台  /product/list/{id}
+2019-05-23 17:34:47.110 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 17:34:54.499 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 17:34:57.409 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:34:57.417 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 17:35:20.904 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:35:20.908 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 17:37:52.270 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:37:52.293 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
+2019-05-23 17:42:18.229 [INFO ] com.application.controller.App_areaController - 后台 /product/list/{type}
+2019-05-23 17:42:21.273 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:31.224 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:35.275 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:35.428 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:37.835 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:37.997 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:39.670 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:48.437 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:48.646 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:50.978 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:43:53.095 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:44:28.523 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:44:31.192 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:44:35.370 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:45:20.791 [INFO ] com.application.controller.App_areaController - 后台 /area
+2019-05-23 17:45:20.853 [INFO ] com.application.controller.App_pictureController - 后台  /picture
+2019-05-23 17:45:32.164 [INFO ] com.application.controller.App_userController - 后台 /login
+2019-05-23 17:45:33.581 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:45:40.905 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:48:08.292 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:48:31.654 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:48:36.787 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:56:35.699 [INFO ] com.application.interceptor.TokenInterceptor - 进入tokenInterceptor拦截器
+2019-05-23 17:56:35.708 [INFO ] com.application.controller.App_passengerController - 后台 /user/{user_id}
